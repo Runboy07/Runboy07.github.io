@@ -82,6 +82,10 @@ main { flex: 1; padding: 4.5rem 0 5rem; }
 .block-title::before { content: "// "; color: var(--accent); }
 .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; }
 
+.info-box { background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 10px; padding: 1.5rem 1.6rem; }
+.info-box p { color: var(--muted); font-size: 1.02rem; margin: 0; }
+.info-box p + p { margin-top: 1em; }
+
 .skills { display: flex; flex-wrap: wrap; gap: .5rem; list-style: none; padding: 0; margin: 0; }
 .skills li { font-family: var(--mono); font-size: .88rem; background: var(--accent-soft); color: var(--accent); padding: .3rem .8rem; border: 1px solid var(--line); border-radius: 4px; }
 
