@@ -124,7 +124,19 @@ main { flex: 1; padding: 4.5rem 0 5rem; }
 .job p { color: var(--muted); font-size: 1.02rem; }
 
 /* ---------- Contact ---------- */
-.contact-list { list-style: none; padding: 0; margin: 2.5rem 0 0; display: grid; gap: .8rem; font-family: var(--mono); font-size: 1rem; }
+.form { display: grid; gap: 1.25rem; max-width: 620px; }
+.field { display: grid; gap: .4rem; }
+.field label { font-family: var(--mono); font-size: .85rem; color: var(--muted); }
+.field label::before { content: "> "; color: var(--accent); }
+.field input, .field textarea { width: 100%; font: 1rem/1.5 var(--display); color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: .8rem 1rem; transition: border-color .15s, box-shadow .15s; }
+.field textarea { resize: vertical; min-height: 9rem; }
+.field input:focus, .field textarea:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+.form .btn { justify-self: start; cursor: pointer; }
+.form .btn:disabled { opacity: .6; cursor: wait; }
+.status { font-family: var(--mono); font-size: .9rem; margin: 0; min-height: 1.4em; color: var(--muted); }
+.status.ok { color: var(--accent); }
+.status.err { color: #e5484d; }
+.contact-list { list-style: none; padding: 0; margin: 3rem 0 0; display: grid; gap: .8rem; font-family: var(--mono); font-size: 1rem; }
 .contact-list span { display: inline-block; width: 7rem; color: var(--muted); }
 .contact-list span::before { content: "> "; color: var(--accent); }
 
