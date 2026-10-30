@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Spencer Mulder - Projects</title>
+<title>Projects – Your Name</title>
 <meta name="description" content="Selected projects by Your Name.">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💜</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
@@ -13,55 +14,151 @@
 <body>
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="index.html">Spencer Mulder</a>
+    <a class="brand" href="index.html">Your Name</a>
     <nav aria-label="Main">
-      <a href="index.html">Home</a>
-      <a href="projects.html" aria-current="page">Projects</a>
-      <a href="experience.html">Experience</a>
-      <a href="contact.html">Contact</a>
+      <a href="index.html">home</a>
+      <a href="projects.html" aria-current="page">projects</a>
+      <a href="experience.html">experience</a>
+      <a href="contact.html">contact</a>
     </nav>
   </div>
 </header>
 <main>
   <div class="wrap">
-    <h1 class="page-title">Projects</h1>
+    <h1 class="page-title">projects</h1>
     <p class="lede">A few things I've built recently.</p>
-    
-    <div class="grid">
-      <a class="card" href="ddcd.html">
-        <div class="thumb"><span>add image</span><img src="images/ddcd.png" alt="Screenshot of DDCD" onerror="this.remove()"></div>
-        <div class="body">
-          <span class="year">2026</span>
-          <h3>DDCD</h3>
-          <p>DDCD is a tool used to create Dungeons and Dragons characters and store them on a MySQL database.</p>
-          <ul class="tags"><li>Tag</li><li>Tag</li></ul>
+    <p class="jump"><span>jump to</span> <a href="#ddcd">DDCD</a> <a href="#cranium-cards">Cranium Cards</a> <a href="#wiener-warriors">Wiener Warriors</a></p>
+    <!-- Copy one <section class="project"> block to add a project. -->
+
+    <section class="project" id="ddcd">
+      <div class="project-head">
+        <h2 class="project-title">DDCD</h2>
+        <span class="year">2026</span>
+      </div>
+      <p class="project-lede">One sentence that sums up what DDCD is and why it matters.</p>
+
+      <div class="detail">
+        <div class="block">
+          <h3 class="block-title">overview</h3>
+          <p>Describe the project: what it is, who it's for, and the problem it solves.</p>
+          <p>Add a second paragraph about how you built it, challenges you ran into, and what you learned.</p>
         </div>
-      </a>
-      <a class="card" href="cranium-cards.html">
-        <div class="thumb"><span>add image</span><img src="images/cranium-cards.png" alt="Screenshot of Cranium Cards" onerror="this.remove()"></div>
-        <div class="body">
-          <span class="year">2026</span>
-          <h3>Cranium Cards</h3>
-          <p>Cranium Cards is an app desgined for students to create flash cards to study, quiz, etc.</p>
-          <ul class="tags"><li>Tag</li><li>Tag</li></ul>
+        <aside class="block">
+          <h3 class="block-title">details</h3>
+          <dl class="facts">
+            <div><dt>role</dt><dd>Your role</dd></div>
+            <div><dt>built with</dt><dd><ul class="tags"><li>Tag</li><li>Tag</li></ul></dd></div>
+            <div><dt>links</dt><dd><a href="https://github.com/your-username/ddcd">source code</a></dd></div>
+          </dl>
+        </aside>
+      </div>
+
+      <div class="block">
+        <h3 class="block-title">video</h3>
+        <div class="artifacts one">
+        <figure class="artifact">
+          <div class="video-frame">
+            <span>add video</span>
+            <!-- Option A: a video file. Put it in a "videos" folder and match the name below. -->
+            <video controls preload="metadata"><source src="videos/ddcd.mp4" type="video/mp4" onerror="this.closest('video').remove()"></video>
+            <!-- Option B: a YouTube video. Delete the <video> line above and uncomment this, replacing VIDEO_ID:
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="DDCD video" allowfullscreen></iframe>
+            -->
+          </div>
+          <figcaption>Short caption describing the video.</figcaption>
+        </figure>
+      </div>
+      </div>
+    </section>
+
+    <section class="project" id="cranium-cards">
+      <div class="project-head">
+        <h2 class="project-title">Cranium Cards</h2>
+        <span class="year">2025</span>
+      </div>
+      <p class="project-lede">One sentence that sums up what Cranium Cards is and why it matters.</p>
+
+      <div class="detail">
+        <div class="block">
+          <h3 class="block-title">overview</h3>
+          <p>Describe the project: what it is, who it's for, and the problem it solves.</p>
+          <p>Add a second paragraph about how you built it, challenges you ran into, and what you learned.</p>
         </div>
-      </a>
-      <a class="card" href="wiener-warriors.html">
-        <div class="thumb"><span>add image</span><img src="images/wiener-warriors.png" alt="Screenshot of Wiener Warriors" onerror="this.remove()"></div>
-        <div class="body">
-          <span class="year">2026</span>
-          <h3>Wiener Warriors: The Quest for Ketchup</h3>
-          <p>Wiener Warriors is a roguelike bullet hell game in active development.</p>
-          <ul class="tags"><li>Tag</li><li>Tag</li></ul>
+        <aside class="block">
+          <h3 class="block-title">details</h3>
+          <dl class="facts">
+            <div><dt>role</dt><dd>Your role</dd></div>
+            <div><dt>built with</dt><dd><ul class="tags"><li>Tag</li><li>Tag</li></ul></dd></div>
+            <div><dt>links</dt><dd><a href="https://github.com/your-username/cranium-cards">source code</a></dd></div>
+          </dl>
+        </aside>
+      </div>
+
+      <div class="block">
+        <h3 class="block-title">video</h3>
+        <div class="artifacts one">
+        <figure class="artifact">
+          <div class="video-frame">
+            <span>add video</span>
+            <!-- Option A: a video file. Put it in a "videos" folder and match the name below. -->
+            <video controls preload="metadata"><source src="videos/cranium-cards.mp4" type="video/mp4" onerror="this.closest('video').remove()"></video>
+            <!-- Option B: a YouTube video. Delete the <video> line above and uncomment this, replacing VIDEO_ID:
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Cranium Cards video" allowfullscreen></iframe>
+            -->
+          </div>
+          <figcaption>Short caption describing the video.</figcaption>
+        </figure>
+      </div>
+      </div>
+    </section>
+
+    <section class="project" id="wiener-warriors">
+      <div class="project-head">
+        <h2 class="project-title">Wiener Warriors</h2>
+        <span class="year">2024</span>
+      </div>
+      <p class="project-lede">One sentence that sums up what Wiener Warriors is and why it matters.</p>
+
+      <div class="detail">
+        <div class="block">
+          <h3 class="block-title">overview</h3>
+          <p>Describe the project: what it is, who it's for, and the problem it solves.</p>
+          <p>Add a second paragraph about how you built it, challenges you ran into, and what you learned.</p>
         </div>
-      </a>
-    </div>
+        <aside class="block">
+          <h3 class="block-title">details</h3>
+          <dl class="facts">
+            <div><dt>role</dt><dd>Your role</dd></div>
+            <div><dt>built with</dt><dd><ul class="tags"><li>Tag</li><li>Tag</li></ul></dd></div>
+            <div><dt>links</dt><dd><a href="https://github.com/your-username/wiener-warriors">source code</a></dd></div>
+          </dl>
+        </aside>
+      </div>
+
+      <div class="block">
+        <h3 class="block-title">images</h3>
+        <div class="artifacts three">
+        <figure class="artifact">
+          <div class="image-frame"><span>add image 1</span><img src="images/wiener-warriors-1.png" alt="Wiener Warriors screenshot 1" onerror="this.remove()"></div>
+          <figcaption>Caption for image 1.</figcaption>
+        </figure>
+        <figure class="artifact">
+          <div class="image-frame"><span>add image 2</span><img src="images/wiener-warriors-2.png" alt="Wiener Warriors screenshot 2" onerror="this.remove()"></div>
+          <figcaption>Caption for image 2.</figcaption>
+        </figure>
+        <figure class="artifact">
+          <div class="image-frame"><span>add image 3</span><img src="images/wiener-warriors-3.png" alt="Wiener Warriors screenshot 3" onerror="this.remove()"></div>
+          <figcaption>Caption for image 3.</figcaption>
+        </figure>
+      </div>
+      </div>
+    </section>
   </div>
 </main>
 <footer class="site-footer">
   <div class="wrap">
-    <span>© <span id="year">2026</span> Spencer Mulder</span>
-    <span><a href="https://github.com/Runboy07/">github</a> &nbsp; <a href="https://www.linkedin.com/in/spencer-mulder-193422447/">linkedin</a></span>
+    <span>© <span id="year">2026</span> Your Name</span>
+    <span><a href="https://github.com/your-username">github</a> &nbsp; <a href="https://www.linkedin.com/in/your-username">linkedin</a></span>
   </div>
 </footer>
 <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
